@@ -7,10 +7,10 @@
 
 ## ⚡ Key Achievements / 実績数値 (2026-02-13 更新)
 * **Processing Scale (処理規模)**: 211,401,886 rows
-* **Storage Efficiency (圧縮効率)**: **3.1 GB on disk** (Compressed Parquet)
-* **In-Memory Scale (処理容量)**: **20.53 GB in VRAM** (Uncompressed)
-* **Total Processing Time (総処理時間)**: **32.21 seconds** (Full ETL & Statistics)
-* **Data Integrity (データ品質)**: 1,044,904件の異常レコード（運賃不正等）を特定し、自動除去。
+* **Storage Size (ディスク容量)**: **3.1 GB** (Apache Parquet / **Snappy Compression**)
+* **In-Memory Scale (展開後容量)**: **20.53 GB** in VRAM
+* **Processing Speed**: **32.21 seconds** (From Snappy decompression to final stats)
+    * GPU による並列解凍・演算により、CPU 処理と比較して圧倒的なスループットを実現。
 
 ## 📈 Performance Benchmarks / パフォーマンス詳細
 
